@@ -626,11 +626,6 @@ class QuillRawEditorState extends EditorState
               meta: isDesktopMacOS,
               shift: true,
             ): const ToggleTextStyleIntent(Attribute.blockQuote),
-            SingleActivator(
-              LogicalKeyboardKey.keyK,
-              control: !isDesktopMacOS,
-              meta: isDesktopMacOS,
-            ): const QuillEditorApplyLinkIntent(),
 
             // Lists
             SingleActivator(
@@ -1685,8 +1680,7 @@ class QuillRawEditorState extends EditorState
     ToggleTextStyleIntent: _formatSelectionAction,
     IndentSelectionIntent: _indentSelectionAction,
     QuillEditorApplyHeaderIntent: _applyHeaderAction,
-    QuillEditorApplyCheckListIntent: _applyCheckListAction,
-    QuillEditorApplyLinkIntent: QuillEditorApplyLinkAction(this)
+    QuillEditorApplyCheckListIntent: _applyCheckListAction
   };
 
   @override
