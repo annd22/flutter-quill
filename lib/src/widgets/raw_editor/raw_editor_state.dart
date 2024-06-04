@@ -783,6 +783,8 @@ class QuillRawEditorState extends EditorState
       return KeyEventResult.ignored;
     }
 
+    return KeyEventResult.ignored;
+
     const olKeyPhrase = '1.';
     const ulKeyPhrase = '-';
 
