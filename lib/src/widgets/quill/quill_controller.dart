@@ -35,6 +35,7 @@ class QuillController extends ChangeNotifier {
       FocusNode? editorFocusNode}) {
     return QuillController(
       configurations: configurations,
+      editorFocusNode: editorFocusNode,
       document: Document(),
       selection: const TextSelection.collapsed(offset: 0),
     );
