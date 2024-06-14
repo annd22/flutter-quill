@@ -52,7 +52,7 @@ class Rules {
 
   final List<Rule> _rules;
   static final Rules _instance = Rules(const [
-    FormatLinkAtCaretPositionRule(),
+    // FormatLinkAtCaretPositionRule(),
     ResolveLineFormatRule(),
     ResolveInlineFormatRule(),
     ResolveImageFormatRule(),
@@ -61,8 +61,8 @@ class Rules {
     PreserveBlockStyleOnInsertRule(),
     PreserveLineStyleOnSplitRule(),
     ResetLineFormatOnNewLineRule(),
-    AutoFormatLinksRule(),
-    AutoFormatMultipleLinksRule(),
+    // AutoFormatLinksRule(),
+    // AutoFormatMultipleLinksRule(),
     PreserveInlineStylesRule(),
     CatchAllInsertRule(),
     EnsureEmbedLineRule(),
